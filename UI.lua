@@ -394,7 +394,7 @@ function Library:Create(xHubName,xGameName)
 
             ToggleF.Name = "ToggleF"
             ToggleF.Parent = ToggleFrame
-            ToggleF.BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+            ToggleF.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
             ToggleF.BackgroundTransparency = 0
             ToggleF.BorderSizePixel = 0
             ToggleF.Position = UDim2.new(0.867647052, 0, 0.142857149, 0)
@@ -406,7 +406,7 @@ function Library:Create(xHubName,xGameName)
 
             ToggleButton.Name = "ToggleButton"
             ToggleButton.Parent = ToggleF
-            ToggleButton.BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+            ToggleButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
             ToggleButton.BackgroundTransparency = 1
             ToggleButton.BorderSizePixel = 0
             ToggleButton.Size = UDim2.new(0, 45, 0, 23)
@@ -432,7 +432,7 @@ function Library:Create(xHubName,xGameName)
                     game:GetService("TweenService"):Create(ToggleF, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(70, 70, 70)}):Play() 
                     game:GetService("TweenService"):Create(ToggleCircle, TweenInfo.new(0.3), {Position = UDim2.new(0.559, 0,0.153, 0)}):Play() 
                 else
-                    game:GetService("TweenService"):Create(ToggleF, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(55, 55, 75)}):Play() 
+                    game:GetService("TweenService"):Create(ToggleF, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(57, 57, 57)}):Play() 
                     game:GetService("TweenService"):Create(ToggleCircle, TweenInfo.new(0.3), {Position = UDim2.new(0.093, 0,0.153, 0)}):Play() 
                 end
                 pcall(Callback,ToggleEnabled)
@@ -465,7 +465,7 @@ function Library:Create(xHubName,xGameName)
 
             SliderButton.Name = "SliderButton"
             SliderButton.Parent = SliderFrame
-            SliderButton.BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+            SliderButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
             SliderButton.BorderSizePixel = 0
             SliderButton.Position = UDim2.new(0.0242369417, 0, 0.639999986, 0)
             SliderButton.Size = UDim2.new(0, 389, 0, 10)
@@ -597,7 +597,7 @@ function Library:Create(xHubName,xGameName)
 
             Textbox.Name = "Textbox"
             Textbox.Parent = TextboxFrame
-            Textbox.BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+            Textbox.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
             Textbox.BorderSizePixel = 0
             Textbox.Position = UDim2.new(0.610294104, 0, 0.171428576, 0)
             Textbox.Size = UDim2.new(0, 150, 0, 23)
@@ -619,7 +619,7 @@ function Library:Create(xHubName,xGameName)
 
             Textbox.FocusLost:Connect(function()
                 game:GetService("TweenService"):Create(Textbox, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-                    BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+                    BackgroundColor3 = Color3.fromRGB(57, 57, 57)
                 }):Play()
                 Callback(Textbox.Text)
             end)
@@ -663,7 +663,7 @@ function Library:Create(xHubName,xGameName)
             
             KeybindButton.Name = "KeybindButton"
             KeybindButton.Parent = KeybindFrame
-            KeybindButton.BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+            KeybindButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
             KeybindButton.Position = UDim2.new(0.610294104, 0, 0.171428576, 0)
             KeybindButton.Size = UDim2.new(0, 150, 0, 23)
             KeybindButton.Font = Enum.Font.Gotham
@@ -683,7 +683,7 @@ function Library:Create(xHubName,xGameName)
                 local v1, v2 = game:GetService('UserInputService').InputBegan:wait();
                 if v1.KeyCode.Name ~= "Unknown" then
                     game.TweenService:Create(KeybindButton, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
-                        BackgroundColor3 = Color3.fromRGB(55, 55, 75)
+                        BackgroundColor3 = Color3.fromRGB(57, 57, 57)
                     }):Play()
                     KeybindButton.Text = v1.KeyCode.Name
                     Keyx = v1.KeyCode.Name;
